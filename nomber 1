@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    setlocale(LC_ALL, "");
+    int total = 0;
+
+    for (int number = 1; number <= 150; ++number) {
+        if (number % 5 == 0 || number % 7 == 0) {
+            total += number;
+        }
+    }
+
+    cout << "Сумма всех чисел, кратных 5 или 7, в диапазоне от 1 до 150, равна: " << total << endl;
+
+    return 0;
+}
